@@ -11,7 +11,7 @@
 - Daniel Obima, Leader
 - Deborah Kerubo - Backend Developer
 - Caroline Waruingi - Frontend Developer
-- 
+- Bryan - Frontend Developer
   
 #### Project Description
 
