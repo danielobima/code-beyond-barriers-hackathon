@@ -15,7 +15,7 @@
   
 #### Project Description
 
-Provide a clear statement of the challenges/issues/problems/gaps your project engages as well as a brief, high-level description of how your project engages the areas you've identified. What is the value of your approach? Who are the intended users?
+[The project description can be accessed here.](https://docs.google.com/document/d/1HTjhCnnI__dGafjPN61USJAPzMTwo52-aU1Z6KPH6Y4/edit?usp=sharing)
 
 #### Summary
 
