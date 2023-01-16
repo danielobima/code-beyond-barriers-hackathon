@@ -10,7 +10,8 @@
 
 - Daniel Obima, Leader
 - Deborah Kerubo - Backend Developer
-- Teammate 3, role
+- Caroline Waruingi - Frontend Developer
+- 
   
 #### Project Description
 
