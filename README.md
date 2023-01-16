@@ -8,8 +8,8 @@
 
 ##### Team Members
 
-- Teammate 1, role
-- Teammate 2, role
+- Daniel Obima, Leader
+- Deborah Kerubo - Backend Developer
 - Teammate 3, role
   
 #### Project Description
