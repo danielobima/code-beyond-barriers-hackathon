@@ -8,7 +8,7 @@
 
 ##### Team Members
 
-- Daniel Obima, Leader
+- Daniel Obima, Leader +254702695801
 - Deborah Kerubo - Backend Developer
 - Caroline Waruingi - Frontend Developer
 - Bryan - Frontend Developer
