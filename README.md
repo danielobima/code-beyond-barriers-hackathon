@@ -8,8 +8,8 @@
 
 ##### Team Members
 
-- Daniel Obima, Leader +254702695801
-- Deborah Kerubo - Backend Developer
+- Daniel Obima, danielobima (github) - Leader +254702695801
+- Deborah Kerubo, KeruboDee (github) - Backend Developer
 - Caroline Waruingi - Frontend Developer
 - Bryan - Frontend Developer
   
