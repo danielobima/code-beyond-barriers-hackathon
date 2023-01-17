@@ -10,7 +10,7 @@
 
 - Daniel Obima, danielobima (github) - Leader +254702695801
 - Deborah Kerubo, KeruboDee (github) - Backend Developer
-- Caroline Waruingi - Frontend Developer
+- Caroline Waruingi, Warungi254 (github) - Frontend Developer
 - Bryan - Frontend Developer
   
 #### Project Description
