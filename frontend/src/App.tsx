@@ -1,34 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { createTheme, responsiveFontSizes, ThemeProvider } from "@mui/material";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/landing/landing";
+import VolunteersLayout from "./pages/volunteers/layout/layout";
 
 function App() {
-  const [count, setCount] = useState(0)
+  let theme = createTheme({
+    palette: {
+      primary: {
+        main: "#E01B24",
+      },
+      secondary: {
+        main: "#ffffff",
+      },
+    },
+    typography: {
+      fontFamily: "Inria Sans",
+    },
+  });
+  theme = responsiveFontSizes(theme);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <ThemeProvider theme={theme}>
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/volunteers" element={<VolunteersLayout />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
