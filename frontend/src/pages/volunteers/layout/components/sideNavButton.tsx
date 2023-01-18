@@ -1,6 +1,5 @@
-import { Box, Fade, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Fade, Stack, Typography } from "@mui/material";
 import { ReactNode, useMemo, useState } from "react";
-import { HomeRounded } from "@mui/icons-material";
 import { Link, useLocation } from "react-router-dom";
 
 type Props = {
@@ -18,9 +17,13 @@ const VolunteersSideNavButton: React.FC<Props> = ({ icon, page, text }) => {
       component={Link}
       to={page}
       sx={{
-        width: "45px",
+        width: "40px",
         aspectRatio: "1/1",
         borderRadius: "14px",
+        boxShadow:
+          selected && !hover
+            ? " 0px 1px 10px 1px rgba(255, 255, 255, 0.1)"
+            : "none",
         bgcolor: selected && !hover ? "white" : "transparent",
         color: selected || hover ? "#9F141B" : "white",
         position: "relative",
@@ -35,8 +38,8 @@ const VolunteersSideNavButton: React.FC<Props> = ({ icon, page, text }) => {
             sx={{
               position: "absolute",
               bgcolor: "white",
-              height: "45px",
-              pl: "45px",
+              height: "40px",
+              pl: "40px",
               pr: "16px",
               alignItems: "center",
               borderRadius: "14px",

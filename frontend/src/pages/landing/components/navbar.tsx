@@ -10,7 +10,7 @@ const LandingPageNavBar: React.FC = () => {
           px: 3,
           bgcolor: "white",
           height: "10vh",
-          width: "calc(100vw - 48px)",
+          width: "100%",
           top: 0,
           position: "fixed",
           zIndex: 5,

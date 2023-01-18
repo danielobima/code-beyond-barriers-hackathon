@@ -1,6 +1,7 @@
 import { createTheme, responsiveFontSizes, ThemeProvider } from "@mui/material";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/landing/landing";
+import VolunteersDashboard from "./pages/volunteers/dashboard/dashboard";
 import VolunteersLayout from "./pages/volunteers/layout/layout";
 
 function App() {
@@ -24,7 +25,9 @@ function App() {
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/volunteers" element={<VolunteersLayout />}></Route>
+          <Route path="/volunteers" element={<VolunteersLayout />}>
+            <Route index element={<VolunteersDashboard />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

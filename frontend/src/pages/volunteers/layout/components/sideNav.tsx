@@ -1,4 +1,10 @@
-import { HomeRounded } from "@mui/icons-material";
+import {
+  Category,
+  FactCheck,
+  HomeRounded,
+  ListAlt,
+  Settings,
+} from "@mui/icons-material";
 import { Box, Stack } from "@mui/material";
 import VolunteersSideNavButton from "./sideNavButton";
 
@@ -7,7 +13,7 @@ const VolunteersSideNav = () => {
     <>
       <Stack
         sx={{
-          width: "120px",
+          width: "110px",
           height: "100%",
           position: "fixed",
           p: 2,
@@ -19,14 +25,14 @@ const VolunteersSideNav = () => {
             bgcolor: "#9F141B",
             boxShadow: " 0px 10px 25px 5px rgba(0, 0, 0, 0.15)",
             borderRadius: "14px",
-            height: "calc(100% - 32px)",
-            width: "calc(100% - 32px)",
+            height: "100%",
+            width: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             position: "relative",
           }}
-          spacing={2}
+          spacing={4}
         >
           <Box
             sx={{
@@ -47,13 +53,28 @@ const VolunteersSideNav = () => {
           </Box>
           <VolunteersSideNavButton
             icon={<HomeRounded />}
-            page="/volunteers/dashboard"
+            page="/volunteers"
             text="Dashboard"
           />
           <VolunteersSideNavButton
-            icon={<HomeRounded />}
+            icon={<FactCheck />}
             page="/volunteers/tasks"
             text="Tasks"
+          />
+          <VolunteersSideNavButton
+            icon={<Category />}
+            page="/volunteers/resources"
+            text="Resources"
+          />
+          <VolunteersSideNavButton
+            icon={<ListAlt />}
+            page="/volunteers/reports"
+            text="Reports"
+          />
+          <VolunteersSideNavButton
+            icon={<Settings />}
+            page="/volunteers/settings"
+            text="Settings"
           />
         </Stack>
       </Stack>
