@@ -6,7 +6,7 @@ const VolunteersLayout = () => {
   return (
     <Stack sx={{ width: "100vw", minHeight: "100vh" }} direction="row">
       <VolunteersSideNav />
-      <Stack sx={{ flexGrow: 1 }}>
+      <Stack sx={{ width: "calc(100% - 120px)" }}>
         <Outlet />
       </Stack>
     </Stack>

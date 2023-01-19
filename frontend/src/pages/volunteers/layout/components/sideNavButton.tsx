@@ -32,25 +32,23 @@ const VolunteersSideNavButton: React.FC<Props> = ({ icon, page, text }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      {hover && (
-        <Fade in>
-          <Stack
-            sx={{
-              position: "absolute",
-              bgcolor: "white",
-              height: "40px",
-              pl: "40px",
-              pr: "16px",
-              alignItems: "center",
-              borderRadius: "14px",
-              boxShadow: "0px 3px 6px rgba(0,0,0,0.2)",
-            }}
-            direction="row"
-          >
-            <Typography>{text}</Typography>
-          </Stack>
-        </Fade>
-      )}
+      <Fade in={hover}>
+        <Stack
+          sx={{
+            position: "absolute",
+            bgcolor: "white",
+            height: "40px",
+            pl: "40px",
+            pr: "16px",
+            alignItems: "center",
+            borderRadius: "14px",
+            boxShadow: "0px 3px 6px rgba(0,0,0,0.2)",
+          }}
+          direction="row"
+        >
+          <Typography>{text}</Typography>
+        </Stack>
+      </Fade>
       <Box
         sx={{
           position: "absolute",
