@@ -29,9 +29,16 @@ const LandingPageNavButton: React.FC<Props> = ({
         px: 2,
         display: "flex",
         alignItems: "center",
+        transition: "background-color 0.1s",
+        color: "black",
+        textDecoration: "none",
         "&:hover": {
           bgcolor: "#00000044",
         },
+        "&:active": {
+          bgcolor: "#00000066",
+        },
+        cursor: "pointer",
       }}
       {...boxProps}
     >

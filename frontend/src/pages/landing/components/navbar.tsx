@@ -54,8 +54,13 @@ const LandingPageNavBar: React.FC = () => {
               FAQ
             </Typography>
           </LandingPageNavButton>
-          <LandingPageNavButton isLink={false}>
-            <Typography variant="body2" sx={{ fontFamily: "Inter" }}>
+          <LandingPageNavButton isLink={true} href="/volunteers">
+            <Typography
+              variant="body2"
+              sx={{
+                fontFamily: "Inter",
+              }}
+            >
               Sign in
             </Typography>
           </LandingPageNavButton>

@@ -10,6 +10,7 @@ import {
 import LandingPageNavBar from "./components/navbar";
 import girl from "../../assets/girl.png";
 import hands from "../../assets/hands.png";
+import { Link } from "react-router-dom";
 
 const LandingPage: React.FC = () => {
   const theme = useTheme();
@@ -37,7 +38,7 @@ const LandingPage: React.FC = () => {
               variant="h4"
               sx={{ fontFamily: "Inter", fontWeight: "bold" }}
             >
-              Disaster relief platform
+              Crisis Crusaders
             </Typography>
             <Typography sx={{ mb: 2 }}>
               Join the effort to provide aid and support to those affected by
@@ -74,7 +75,9 @@ const LandingPage: React.FC = () => {
             with our disaster relief organization and help make a positive
             impact in the lives of those affected by natural disasters.
           </Typography>
-          <Button variant="contained">Register</Button>
+          <Link to="/volunteers">
+            <Button variant="contained">Register</Button>
+          </Link>
         </Stack>
       </Stack>
       <Stack
